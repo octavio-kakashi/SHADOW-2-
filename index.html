@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Chatbot Octavio</title>
+  <title>Chatbot sHADOW</title>
   <style>
     body {
       background: #111;
@@ -20,7 +20,8 @@
       color: #00ffc8;
       animation: fadeIn 2s ease-in-out;
     }
-
+#chabox p { 
+     color:#f0f0;
     #chatbox {
       width: 100%;
       max-width: 600px;
@@ -104,8 +105,8 @@
   </style>
 </head>
 <body>
-  <h1>𝑲𝑨𝑲𝑨𝑺𝑯𝑰 𝑨𝑰 💻</h1>
-  <div id="chatbox"></div>
+  <h1>𝚂𝙷𝙰𝙳𝙾𝚆 𝑨𝑰 💻</h1>
+  <div id="chatbox"><hr><p>salut moi c'est <b>sHADOW bot créé par SHADOW 2. 0💻 en quoi puis-je vous AIDER</b></p></div>
   <form id="inputForm">
     <input type="text" id="inputQuestion" placeholder="Pose ta question..." required />
     <button type="submit" id="submitBtn">Envoyer</button>
@@ -121,7 +122,7 @@
     function addMessage(text, sender) {
       const div = document.createElement('div');
       div.className = 'message ' + sender;
-      div.textContent = (sender === 'user' ? 'Vous : ' : 'Kakashi bot : ') + text;
+      div.textContent = (sender === 'user' ? 'Vous : ' : '𝚂𝙷𝙰𝙳𝙾𝚆 𝙱𝙾𝚃 : ') + text;
       chatbox.appendChild(div);
       chatbox.scrollTop = chatbox.scrollHeight;
     }
