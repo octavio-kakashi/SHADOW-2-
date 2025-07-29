@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Chatbot Octavio</title>
+  <title>Chatbot sHADOW</title>
   <style>
     /* Animation keyframes */
     @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
@@ -151,7 +151,7 @@
   </style>
 </head>
 <body>
-  <h1>𝑲𝑨𝑲𝑨𝑺𝑯𝑰 𝑨𝑰 💻</h1>
+  <h1>SHADOW 𝑨𝑰 💻</h1>
   <div id="chatbox"></div>
   <form id="inputForm">
     <input type="text" id="inputQuestion" placeholder="Pose ta question..." required />
@@ -168,7 +168,7 @@
     function addMessage(text, sender) {
       const div = document.createElement('div');
       div.className = 'message ' + sender;
-      div.textContent = (sender === 'user' ? 'Vous : ' : 'Kakashi bot : ') + text;
+      div.textContent = (sender === 'user' ? 'Vous : ' : 'shadow 🥰bot : ') + text;
       chatbox.appendChild(div);
       chatbox.scrollTop = chatbox.scrollHeight;
     }
